@@ -164,7 +164,7 @@ function movimentarBola()
         bateu = false;
     }
 
-    if(numeroBatidas >= 5)
+    if((numeroBatidas >= 5) && (taxaDeMovimentoBola <= 5))
     {
         numeroBatidas = 0;
         taxaDeMovimentoBola += aumentoDeVelocidade;
@@ -239,7 +239,7 @@ function captarMovimento(evento)
     switch(codigo)
     {
         //Cima -> Raquete 1
-        case 38:
+        case 87:
             if(Y_raquete1 > 0)
             {
                 Y_raquete1 -= taxaDeMovimentoRaquete;
@@ -247,7 +247,7 @@ function captarMovimento(evento)
             break;
         
         //Baixo -> Raquete 1
-        case 40:
+        case 83:
             if(Y_raquete1 + alturaRaquete < 500)
             {
                 Y_raquete1 += taxaDeMovimentoRaquete;
@@ -255,7 +255,7 @@ function captarMovimento(evento)
             break;
         
         //Baixo -> Raquete 2
-        case 83:
+        case 40:
             if(Y_raquete2 + alturaRaquete < 500)
             {
                 Y_raquete2 += taxaDeMovimentoRaquete;
@@ -263,7 +263,7 @@ function captarMovimento(evento)
             break;
         
         //Cima -> Raquete 2
-        case 87:
+        case 38:
             if(Y_raquete2 > 0)
             {
                 Y_raquete2 -= taxaDeMovimentoRaquete;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Ping Pong</h1>
+        <img src="images/raquete.svg" alt="cobra" width="60px" style="position: relative;top: 2vh">
+    </div>
+    <button id="play" onclick="iniciarJogo()"><img src="images/play.png" alt="play" width="50px"></button>
+    <br>
+    
+    <canvas width="1280" height="500"></canvas>
+
+    <div id="pontuacao">
+        <span id="jogador1" style="font-size: 15px; color: #bd5f24;"></span> <span style="color: #bd5f24;" id="pontos_raquete1"></span> : <span style="color: #356c8b;" id="pontos_raquete2"></span> <span id="jogador2" style="font-size: 15px; color: #356c8b;"></span>
+    </div>
+
+    <script src="js/funcoes.js"></script>
+</body>
+</html>

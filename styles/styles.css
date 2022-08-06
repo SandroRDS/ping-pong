@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body
+{
+    background-color: rgb(179, 179, 71);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1
+{
+    display: inline;
+    color: rgb(46, 41, 15);
+}
+
+#play
+{
+    background-color: rgb(151, 136, 52);
+    border-radius: 50px;
+    border: 0;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+canvas
+{
+    background-color: rgb(136, 255, 89);
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    margin-top: 5vh;
+}
+
+#pontuacao
+{
+    font-size: 25px;
+}

@@ -20,7 +20,7 @@
 > Status do Projeto: *Versão 1 Completa* &#10004;&#x1F6A7;
 
 <h2 id="descricao"> Descrição </h2>
-O projeto consiste na construção de um ping-pong de mesa com HTML, CSS e JavaScript.
+O projeto consiste na construção de um ping-pong de mesa com HTML, CSS e JavaScript. O jogo ainda não possui suporte para conectar dois jogadores em clientes diferentes, desta forma, os dois jogadores devem estar no mesmo dispositivo para jogarem juntos.
 <br><br>
 <p align="center">
 <img src="images/gameplay.gif" width="800px">
@@ -28,14 +28,20 @@ O projeto consiste na construção de um ping-pong de mesa com HTML, CSS e JavaS
 Interface do Jogo e Gameplay
 </p>
 
-<h2 id="regras"> Regras do Jogo </h2>  
-
-<br>
-
-
+<h2 id="regras"> Regras do Jogo </h2>
+Os dois jogadores devem combinar no início da partida a quantidade de pontos necessários para vitória, desta forma, o vencedor será aquele que alcançar primeiro o placar determinado.
+<br><br>
+Durante cada rodada, a velocidade da bola vai aumentando gradualmente, para aumentar a dificuldade e evitar que os dois jogadores entrem em um impasse. No final de cada rodada, ou seja, após alguém levar um ponto, essa velocidade é restaurada para seu valor padrão inicial.
+<br><br>
 <h3>Controles</h3>
 
-
+* Raquete 1 (Laranja)
+    * Subir: W
+    * Descer: S
+<br><br>
+* Raquete 2 (Azul)
+    * Subir: &#8593; (Seta Para Cima)
+    * Descer: &#8595; (Seta Para Baixo)
 <h2 id="ferramentas"> Ferramentas Utilizadas </h2>
 
 * ***HTML*** e ***CSS***: Criação e estilização dos elementos da página.
